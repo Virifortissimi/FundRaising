@@ -791,6 +791,23 @@ form.scholarship-tel {
     .impact-content p {
         font-size: 14px;
     }
+    .sponsors-section a {
+        font-size: 16px;
+        font-weight: 600;
+        color: #87ac56 !important;
+    }
+    img.img-responsive.footer-logo {
+        width: 200px;
+        height: 74px;
+        margin-left: 16px;
+        margin-top: 10px;
+    }
+    .col-lg-2.col-md-2.col-sm-12.footer-links {
+        margin-left: 28px;
+    }
+    .footer-section button.btn.btn-primary.mb-2 {
+        margin-left: 30px;
+    }
 }
 @media (max-width: 436px) {
     .input-group.navbar-input {
@@ -974,6 +991,22 @@ form.scholarship-tel {
     } 
     .impact-forms button.btn.btn-primary.mb-2 {
         margin: 10px 24px 10px 14px;
+    }
+    .impact-forms input#phone {
+        margin-left: 29px;
+    }
+    .intl-tel-input .selected-flag {
+        margin-left: 27px;
+    }
+    .second-phone input#phone {
+        margin-left: 16px !important;
+    }
+    .second-phone .flag-container {
+        margin-left: -14px;
+    }
+    .row.join-us-footer {
+        margin-top: 156px;
+        padding-bottom: 10px;
     }
 }
 @media (max-width: 440px) {
