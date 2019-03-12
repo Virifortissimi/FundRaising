@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScholarX</title>
+
+<!-- STYLES -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootscrap.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- NAVBAR STARTS -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="logo" class="img-responsive"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="form-inline navbar-form">
+            <div class="input-group navbar-input">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><img src="./img/search.png" alt="search" class="img-responsive"></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Search for scholarship..." aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Students
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Create Fund Request</a>
+                        <a class="dropdown-item" href="#">Find Scholarship</a>
+                        <a class="dropdown-item" href="#">Get Help</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Sponsor
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Fund Education</a>
+                        <a class="dropdown-item" href="#">Start Scholarship Fund</a>
+                        <a class="dropdown-item" href="#">Get Help</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./img/elipsis.png" alt="menu icons">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item disabled" href="#">About Us</a>
+                        <a class="dropdown-item" href="#">Team</a>
+                        <a class="dropdown-item" href="#">Advisers</a>
+                        <a class="dropdown-item" href="#">Media Features</a>
+                        <a class="dropdown-item" href="#">Impact</a>
+                        <a class="dropdown-item" href="#">Blog</a>
+                        <a class="dropdown-item disabled" href="#">Download App</a>
+                        <a class="dropdown-item" href="#">IOS</a>
+                        <a class="dropdown-item" href="#">Android</a>
+                        <a class="dropdown-item" href="#">Follow Us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <hr class="vertical">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link joinus" href="./joinus.html">Join Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+
+
+    <!-- CAROUSEL STARTS -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/intro-bg(2).jpg" class="d-block w-100 img-responsive" alt="background image" style="width: 100%;">
+                <div class="carousel-caption">
+                        <h1>Quality Education For Everyone</h1>
+                        <p>The Trusted Platform For Financing Education In Africa</p>
+                        <div>
+                            <p>We are recognized by:</p>
+                            <img src="./img/GEC2017.png" alt="GEC2017" class="img-responsive">
+                            <img src="./img/worldsummtiaward.png" alt="worldsummitaward" class="img-responsive">
+                            <img src="./img/cnbc_africa_logo.png" alt="cnbc_africa_logo" class="img-responsive">
+                            <img src="./img/NIS.png" alt="NIS" class="img-responsive">
+                            <img src="./img/sahara.png" alt="sahara" class="img-responsive">
+                        </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/intro-bg.jpg" class="d-block w-100 img-responsive" alt="background image"  style="width: 100%;">
+                <div class="carousel-caption">
+                        <h1>Quality Education For Everyone</h1>
+                        <p>The Trusted Platform For Financing Education In Africa</p>
+                        <div>
+                            <p>We are recognized by:</p>
+                            <img src="./img/GEC2017.png" alt="GEC2017" class="img-responsive">
+                            <img src="./img/worldsummtiaward.png" alt="worldsummitaward" class="img-responsive">
+                            <img src="./img/cnbc_africa_logo.png" alt="cnbc_africa_logo" class="img-responsive">
+                            <img src="./img/NIS.png" alt="NIS" class="img-responsive">
+                            <img src="./img/sahara.png" alt="sahara" class="img-responsive">
+                        </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/intro-bg(1).jpg" class="d-block w-100 img-responsive" alt="background image"  style="width: 100%;">
+                <div class="carousel-caption">
+                        <h1>Quality Education For Everyone</h1>
+                        <p>The Trusted Platform For Financing Education In Africa</p>
+                        <div>
+                            <p>We are recognized by:</p>
+                            <img src="./img/GEC2017.png" alt="GEC2017" class="img-responsive">
+                            <img src="./img/worldsummtiaward.png" alt="worldsummitaward" class="img-responsive">
+                            <img src="./img/cnbc_africa_logo.png" alt="cnbc_africa_logo" class="img-responsive">
+                            <img src="./img/NIS.png" alt="NIS" class="img-responsive">
+                            <img src="./img/sahara.png" alt="sahara" class="img-responsive">
+                        </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <img src="./img/baseline-arrow_forward_ios-24px.png" alt="">
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <img src="./img/Vector.png" alt="">
+        </a>
+    </div>
+    <!-- CAROUSEL ENDS -->
+
+    <!-- SPONSORS SECTION START -->
+    <div class="row sponsors-section">
+        <div class="container">
+            <h2 class="sponsors-header">Sp<span>ons</span>ors</h2>
+            <div class="col-lg-6 col-md-6  col-sm-12">
+                <h2>N20 million naira worth of Scholarships managed</h2>
+                <p>Join us in changing access to funds for young Africans, because we believe dreams shouldn't be hindered by money.  </p>
+                <button>Fund Education</button>
+                <span><a>Start a Scholarship Fund </a></span>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="./img/Rectangle2.png" alt="scholarships managed" class="img-responsive sponsor-image" style="width: 100%" >    
+            </div>
+        </div>
+    </div>
+    <!-- SPONSOR SECTION ENDS -->
+
+    <!-- STUDENTS SECTION START -->
+    <div class="row students-section">
+        <div class="container">
+            <h2 class="students-header">St<span>uden</span>ts</h2>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="./img/Rectangle1.png" alt="quality education" class="img-responsive student-image" style="width: 100%" >    
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2>No child gets left behind without quality education</h2>
+                <p>Join 100,000+ students to get fully funded  </p>
+                <button>Create fund request</button>
+            </div>
+        </div>
+    </div>
+    <!-- STUDENTS SECTION ENDS -->
+
+    <!-- TRENDS SECTION STARTS -->
+    <div class="row trends-section">
+        <div class="container-fluid">
+            <h3 class="trends-header">We've got trending Scholarships for you</h3>
+            <div class="row">
+                <div class="container trends-content">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="./img/trend1.png" alt="scholarships" class="img-responsive" style="width: 100%;">    
+                        <h4>2018 Jilin Provincial Governmet Scholarship-Changchun University of Science and Technology Program</h4>
+                        <p>Changchun University of Science and Technology</p>
+                        <footer>
+                            <span>Bachelors</span>
+                            <span>Masters</span>
+                        </footer>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="./img/trend2.png" alt="scholarships" class="img-responsive" style="width: 100%;">    
+                        <h4>Valencia College Global Achievers Award</h4>
+                        <p>Valencia College, Florida</p>
+                        <footer>
+                            <span>Bachelors</span>
+                            <span>Masters</span>
+                            <span>PhD</span>
+                        </footer>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="./img/trend3.png" alt="scholarships" class="img-responsive" style="width: 100%;">    
+                        <h4>German Language Course</h4>
+                        <p>Goethe-Institute</p>
+                        <footer>
+                            <span>Diploma</span>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container trends-content">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="./img/trend4.png" alt="scholarships" class="img-responsive" style="width: 100%;">    
+                        <h4>2018 Jilin Provincial Governmet Scholarship-Changchun University of Science and Technology Program</h4>
+                        <p>Changchun University of Science and Technology</p>
+                        <footer>
+                            <span>Bachelors</span>
+                            <span>Masters</span>
+                        </footer>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="./img/trend5.png" alt="scholarships" class="img-responsive" style="width: 100%;">    
+                        <h4>Valencia College Global Achievers Award</h4>
+                        <p>Valencia College, Florida</p>
+                        <footer>
+                            <span>Bachelors</span>
+                            <span>Masters</span>
+                            <span>PhD</span>
+                        </footer>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="./img/trend6.png" alt="scholarships" class="img-responsive" style="width: 100%;">    
+                        <h4>German Language Course</h4>
+                        <p>Goethe-Institute</p>
+                        <footer>
+                            <span>Diploma</span>
+                        </footer>
+                    </div>
+                </div>
+            </div>       
+            <button>Find More Scholarships</button>     
+        </div>
+    </div>
+    <!-- TRENDS SECTION ENDS -->
+
+    <!-- ABOUT SCHOLARX SECTION START -->
+        <div class="row about-section">
+            <div class="container">
+                <h2 class="about-header">Abou<span>t Sch</span>olarX</h2>
+                <h3>N5 million in tuition raised and disbursed</h3>
+                <p>ScholarX is a social impact platform that focuses ondemocratizing Access to Education for African Youth, by connecting them with funding sources that enable them to get quality education. </p>
+                <h3 class="about-header">Our <span>Mis</span>sion</h3>
+                <p>To put African students on a better life part through access to quality education.</p>
+                <h3 class="about-header">Our <span>Par</span>tners</h3>
+                <div>
+                    <span><img src="./img/npower.png" alt="npower" class="img-responsive"></span>
+                    <span><img src="./img/lagosinnovates.png" alt="lagosinnovates" class="img-responsive about-image"></span>
+                    <span><img src="./img/injini.png" alt="injini" class="img-responsive"></span><br />
+                </div>
+                <button> <a href="./team.html">More about the team</a> </button>
+            </div>
+        </div>
+    <!-- ABOUT SCHOLARX SECTION ENDS -->
+
+    <!-- IMPACT STORY SECTION -->
+    <div class="row impact-section">
+        <div class="container">
+            <h2 class="impact-header">Impa<span>ct S</span>tory</h2>
+        </div>
+    </div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="container">
+                        <div class="carousel-item active">
+                                <div class="col-lg-6 col-md-6 col-sm-12 impact-content">
+                                    <p>Thank You ScholarX for exposing hiding scholarships for nigerian Students home and abroad</p>
+                                    <footer>
+                                        <p>Adekunle Ibrahim, UNILAG</p>
+                                        <p>(Winner Shey Shay Give Away)</p>
+                                    </footer>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 impact-content">
+                                    <p>Now i can face my studies while ScholarX do the scholarship search for me and all i do is map the deadline to my calender and apply later</p>
+                                    <footer>
+                                        <p>Ijaodola Jamiu, LASU</p>
+                                    </footer>
+                                </div>
+                </div>
+               
+                </div>
+                <div class="carousel-item">
+                    <div class="col-lg-6 col-md-6 col-sm-12 impact-content">
+                        <p>Thank You ScholarX for exposing hiding scholarships for nigerian Students home and abroad</p>
+                        <footer>
+                            <p>Adekunle Ibrahim, UNILAG</p>
+                            <p>(Winner Shey Shay Give Away)</p>
+                        </footer>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 impact-content">
+                        <p>Now i can face my studies while ScholarX do the scholarship search for me and all i do is map the deadline to my calender and apply later</p>
+                        <footer>
+                            <p>Ijaodola Jamiu, LASU</p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-lg-6 col-md-6 col-sm-12 impact-content">
+                        <p>Thank You ScholarX for exposing hiding scholarships for nigerian Students home and abroad</p>
+                        <footer>
+                            <p>Adekunle Ibrahim, UNILAG</p>
+                            <p>(Winner Shey Shay Give Away)</p>
+                        </footer>
+                    </div><div class="col-lg-6 col-md-6 col-sm-12 impact-content">
+                        <p>Now i can face my studies while ScholarX do the scholarship search for me and all i do is map the deadline to my calender and apply later</p>
+                        <footer>
+                            <p>Ijaodola Jamiu, LASU</p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <img src="./img/baseline-arrow_forward_ios-24px.png" alt="">
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <img src="./img/Vector.png" alt="">
+            </a>
+        </div>
+    <!-- IMPACT STORY SECTION -->
+
+    <!-- GET STARTED SECTION START -->
+    <div class="row get-started-section">
+        <div class="container">
+            <h3 class="get-started-header">Get Started</h3>
+            <span><button>As a Student</button></span>
+            <span><button>As a Sponsor</button></span>
+        </div>
+    </div>
+    <!-- GET STARTED SECTION ENDS -->
+
+    <!-- FAQ SECTION START -->
+    <div class="row faq-section">
+        <div class="container">
+            <h2 class="faq-header">Frequently A<span>ske</span>d Questions</h2>
+            <div class="col-lg-6 col-md-6 col-sm-12 faq-content">
+                <div id="accordion" class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Is ScholarX App Free For Download?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">What do I get after i download the App?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">What is Village by ScholarX, and how can i benefit from it?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Why do i need to unlock more Scholarships and How much does it cost to unlock?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Is there a limit to the amount i can request for?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 faq-content">
+                <div id="accordion" class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Who can apply for funds?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">How can i submit an application for fund request that will be approved?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Is there any Admin charge that will be deducted after i eventually get sponsored?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseEight" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">I am in a Private/Public Secondary School. How will the funds get to me?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseNine" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Do i need a account before applying for funds?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>After downloading on Google Playstore for free, Users will have access to available general scholarships.</p>
+                            </div>
+                        </div>
+                    </div>                                    
+                </div>
+            </div>
+            <button>Load More</button>
+        </div>
+    </div>
+    <!-- FAQ SECTION ENDS -->
+
+
+    <!-- FOOTER STARTS  -->
+    <footer>
+        <div class="row footer-section">
+            <div class="container-fluid">
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <h2>We're here to help</h2>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <p>Our team is eager to assist you. If you need help getting started, or have trouble using ScholarX, get in touch so we can help.</p>
+                    <p class="bold-footer">Get help</p>
+                </div>
+            </div>
+            <hr>
+            <div class="container-fluid">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <a href="./index.html"><img src="./img/logo.png" alt="logo" class="img-responsive footer-logo"></a> 
+                    <p>Get notified on Scholarship and funds, subscribe to our newsletter</p>
+                    <form class="form-inline">
+                            <div class="form-group mx-sm-3 mb-2">
+                              <label for="inputEmail" class="sr-only">Password</label>
+                              <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                          </form>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 footer-links">
+                    <h4>Student</h4>
+                    <p> <a href="#">Create Fund Request</a> </p>
+                    <p> <a href="#">Find Scholarship</a> </p>
+                    <p> <a href="#"> Get Help</a></p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 footer-links">
+                    <h4>Sponsor</h4>
+                    <p> <a href="#">Fund Scholarship</a> </p>
+                    <p> <a href="#">Find Scholarship Fund</a> </p>
+                    <p> <a href="#"> Get Help</a></p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 footer-links">
+                    <h4>About us</h4>
+                    <p> <a href="#">Team</a> </p>
+                    <p> <a href="#">Impact</a> </p>
+                    <p> <a href="#"> News and Media</a></p>
+                </div>
+            </div>
+            <div class="container-fluid get-app">
+                <h4>Get App on Mobile</h4>
+                <span class="googleplay"><a href="#"><img src="./img/Googleplay.png" alt="GooglePlay"></a></span>
+                <span><a href="#"><img src="./img/Appstore.png" alt="GooglePlay"></a></span>
+            </div>
+            <hr>
+            <div class="container-fluid">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <p>&copy; 2019 ScholarX</p> 
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 footer-socials">
+                    <span><a href="#"><img src="./img/facebook-logo.png" alt="facebook" class="img-responsive facebook"></a></span>
+                    <span><a href="#"><img src="./img/instagram.png" alt="instagram" class="img-responsive instagram"></a></span>
+                    <span><a href="#"><img src="./img/twitter-logo-silhouette.png" alt="twitter" class="img-responsive twitter"></a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+
+    
+
+
+
+
+<!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <!--  -->
+</body>
+</html>
