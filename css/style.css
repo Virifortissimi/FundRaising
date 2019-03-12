@@ -94,7 +94,7 @@ h2.sponsors-header {
     background: #85aa54;
     border: none;
     border-radius: 5px;
-    text-align: ;
+    /* text-align: ; */
     margin-left: -52px;
     margin-right: 78px;
 }
@@ -135,7 +135,7 @@ h2.students-header {
     background: #85aa54;
     border: none;
     border-radius: 5px;
-    text-align: ;
+    /* text-align: ; */
     margin-left: -309px;
 }
 img.img-responsive.student-image {
@@ -653,6 +653,11 @@ form.scholarship-tel {
 
 
 /* HOME PAGE MEDIA QUERY */
+@media (max-width: 1050px) {
+    .carousel-caption div {
+        margin-top: 65px;
+    }
+}
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1rem;
@@ -680,7 +685,7 @@ form.scholarship-tel {
         background: #85aa54;
         border: none;
         border-radius: 5px;
-        text-align: ;
+        /* text-align: ; */
         margin-left: -52px;
         margin-right: 0px;
     }
@@ -793,6 +798,30 @@ form.scholarship-tel {
     }
     .navbar-light .navbar-toggler {
         margin-left: 114px;
+    }
+    img.img-responsive.gec, img.img-responsive.wsa {
+        width: 72px;
+    }
+    img.img-responsive.cnbc {
+        width: 26px;
+    }
+    img.img-responsive.nis {
+        width: 47px;
+    }
+    img.img-responsive.sah {
+        width: 41px;
+    }
+    .carousel-caption {
+        width: 282px;
+    }
+}
+@media (max-width: 412px) {
+    .carousel-caption {
+        padding-bottom: 0px !important;
+    }
+ 
+    .carousel-caption h1 {
+        font-size: 27px !important;
     }
 }
 @media (max-width: 375px) {
