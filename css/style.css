@@ -1377,6 +1377,11 @@ p.first-para {
     .top-square-content {
         bottom: 177px;
     }
+    .top-square-content {
+        /* bottom: 177px; */
+        top: 269px;
+        height: 190px;
+    }
 }
 @media (max-width: 576px) {
     .top-square-content {
@@ -1397,6 +1402,10 @@ p.first-para {
     .top-square-content {
         bottom: 237px;
         height: 176px;
+    }
+    .top-square-content {
+        bottom: 172px;
+        display: none;
     }
 }
 
