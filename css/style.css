@@ -921,6 +921,9 @@ span.forgot-passsword {
     color: #38435B;
     margin-left: 18px;
 }
+form.form-group.row.flag-phone {
+    margin-left: 2px;
+}
 .inpact-page-content p {
     font-size: 16px;
     color: #38435B;
@@ -943,6 +946,196 @@ p.first-para {
     margin-top: 130px;
 }
 /* SEARCH RESULT PAGE ENDS */
+
+
+/* SECONDARY SCHOOL BASICS */
+.row.searchresult-header h2 {
+    font-size: 32px;
+}
+.row.basics-form h3 {
+    font-size: 24px;
+}
+.row.basics-form {
+    margin-top: 50px;
+}
+.row.basics-form p {
+    font-size: 14px;
+}
+.upload-pics {
+    font-size: 12px;
+    /* color: green; */
+    border: 1px solid #ababaf;
+    width: 145px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.basics-form a {
+    color: #8DB859;
+}
+.basics-form label {
+    font-size: 15px;
+    margin-top: 0px;
+}
+.basics-form select#inlineFormCustomSelect {
+    margin-bottom: 25px;
+    border: 1px solid #aba7a7;
+    border-radius: 0px;
+}
+.basics-form input {
+    margin-bottom: 25px;
+    border: 1px solid #aba7a7;
+    border-radius: 0px;
+}
+label.custom-file-label {
+    margin-bottom: 25px;
+    border-radius: 0px;
+    border: 1px solid #aba7a7;
+}
+.form-group.basics-address {
+    margin-top: 12px;
+}
+span.back-button {
+    width: 166px;
+    height: 48px;
+    border: 1px solid #8DB859  ;
+    padding: 10px 0px;
+}
+.back-next {
+    width: 100%;
+    margin-top: 65px;
+}
+span.next-button {
+    /* float: right; */
+    width: 166px;
+    height: 48px;
+    border: 1px solid #8DB859;
+    text-align: center;
+    margin-left: 330px;
+    padding: 10px 0px;
+    background: #8DB859;
+}
+.basics-form textarea {
+    margin-bottom: 25px;
+    border: 1px solid #aba7a7;
+    border-radius: 0px;
+}
+span.back-button a {    
+    padding: 10px 30px;
+}
+span.next-button a {    
+    padding: 10px 30px;
+    color: white;
+}
+span.back-button:hover {
+    background: #8DB859;
+}
+span.next-button:hover {
+    background: white;
+}
+span.back-button a:hover {
+    color: white;
+    text-decoration: none;
+}
+span.next-button a:hover {
+    color: #8DB859;
+    text-decoration: none;
+}
+.col-lg-6.col-md-6.col-sm-12.basic-side-bar {
+   padding-left: 95px;
+}
+.basic-side-bar h3 {
+    margin-top: 30px;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+ul.no-list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+li.marklist {
+    list-style-image: url(../img/ulmarklist.png);
+    height: 41px;
+    padding-left: 10px;
+    padding-top: 6px;
+    font-size: 16px;
+}
+.container-fluid.basic-get-app {
+    margin-top: 40px;
+}
+span.basic-googleplay {
+    margin-right: 30px;
+}
+/* SECONDARY SCHOOL BASICS END */
+
+
+
+/* SECONDARY SCHOOL REVIEW INFO */
+.row.review-info-form {
+    margin-top: 30px;
+}
+.image-review {
+    border: 1px solid #bfb7b7;
+    width: 160px;
+    height: 140px;
+    border-radius: 5px;
+}
+a.image-review-click {
+    font-size: 12px;
+    color: #8DB859;
+}
+td {
+    font-size: 14px;
+}
+td a {
+    color: #8DB859 !important;
+}
+span.back-button a {
+    padding: 10px 30px;
+}
+label span {
+    font-size: 12px;
+}
+/* SECONDARY SCHOOL REVIEW INFO ENDS */
+
+
+
+/* STUDENT DASHBOARD */
+button.campaigns-form-button {
+    width: 100%;
+    padding: 6px 0px;
+    background: #8DB859;
+    border: 1px solid #8DB859;
+    color: white;
+}
+button.campaigns-form-button:hover {
+    width: 100%;
+    padding: 6px 0px;
+    background: white;
+    border: 1px solid #8DB859;
+    color: #8DB859;
+}
+button.see-more-campaign {
+    margin-top: 60px;
+}
+/* STUDENT DASHBOARD END */
+
+
+
+/* VILLAGE  */
+.row.village-content {
+    margin-top: 160px;
+}
+.checkbox-option.village-checkbox-option {
+    margin-left: 0px;
+}
+.village-checkbox-option p {
+    margin-left: 55px;
+    margin-top: -17px;
+}
+/* VILLAGE ENDS */
+
 
 /* HOME PAGE MEDIA QUERY */
 @media (max-width: 1050px) {
@@ -1445,5 +1638,45 @@ p.first-para {
         /* bottom: 0px; */
         /* padding-left: 50px; */
         margin-top: 100px;
+    }
+}
+
+/* SCHOOL AND STUDENT PAGES MEDIA QUERY */
+@media (max-width: 1024px) {
+    span.next-button {
+        margin-left: 240px;
+    }
+}
+@media (max-width: 769px) {
+    span.next-button {
+        margin-left: 120px;
+    }
+    img.playstore-logo {
+        margin-bottom: 20px;
+        width: 146px;
+    }
+}
+@media (max-width: 600px) {
+    .basic-side-bar {
+        margin-top: 90px;
+    }
+    .col-lg-6.col-md-6.col-sm-12.basic-side-bar {
+        padding-left: 5px;
+    }
+    .col-lg-8.col-md-8.col-sm-12.statistics-rule {
+        display: none;
+    }
+    button.see-more-campaign {
+        margin-left: 110px;
+    }
+}
+@media (max-width: 321px) {
+    span.next-button {
+        margin-left: 95px;
+    }
+}
+@media (max-width: 400px) {
+    button.see-more-campaign {
+        margin-left: 44px;
     }
 }
