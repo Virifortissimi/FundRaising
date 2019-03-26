@@ -99,7 +99,7 @@
     <!-- TOP HEADER START -->
     <div class="row searchresult-header">
         <div class="container">
-            <h2>You are joining us as an undergraduate. </h2>
+            <h2>You are creating a campaign as an undergraduate. </h2>
         </div>
     </div>
     <!-- TOP HEADER ENDS -->
@@ -107,17 +107,17 @@
 
     <div class="row basics-form">
         <div class="container">
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12" id="tertiary-basics">
                 <h3>The Basics</h3>
                 <p>This basic information will represent your campaign on your  campaign page, on your campaign card, and in searches.</p>
                 <div class="upload-pics">
                     <a href="#">Click to upload your photo</a>
                 </div>
                 <form>
-                    <label for="inputEmail4">What's your birth day?</label>
+                    <label for="tert_birth_day" id="tert_birth_day_label">What's your birth day?</label>
                     <div class="form-row">
                         <div class="col">
-                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <select class="custom-select mr-sm-2" id="tert_day_of_birth" name="tert_day_of_birth">
                                     <option selected>Select Day</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -153,7 +153,7 @@
                                 </select>
                         </div>
                         <div class="col">
-                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <select class="custom-select mr-sm-2" id="tert_month_of_birth" name="tert_month_of_birth">
                                         <option selected>Select Month</option>
                                         <option value="1">January</option>
                                         <option value="2">February</option>
@@ -170,7 +170,7 @@
                                     </select>
                         </div>
                         <div class="col">
-                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <select class="custom-select mr-sm-2" id="tert_year_of_birth" name="tert_year_of_birth">
                                         <option selected>Select Year</option>
                                         <option value="2019">2019</option>
                                         <option value="2018">2018</option>
@@ -227,63 +227,333 @@
                     </div>
 
 
-                    <label for="inputEmail4">What's your gender?</label> <br>
-                    <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Male">
-                            <label class="form-check-label" for="inlineRadio1">Male</label>
+                    <label for="tert_gender" id="tert_gender_label">What's your gender?</label> <br>
+                    <div class="form-check form-check-inline" id="tert_gender_select">
+                            <input class="form-check-input" type="radio" name="tert_male_gender" id="tert_gender" value="Male">
+                            <label class="form-check-label" for="tert_male_gender">Male</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Female">
-                            <label class="form-check-label" for="inlineRadio2">Female</label>
+                            <input class="form-check-input" type="radio" name="tert_female_gender" id="tert_gender" value="Female">
+                            <label class="form-check-label" for="tert_female_gender">Female</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Other">
-                            <label class="form-check-label" for="inlineRadio3">Other</label>
+                            <input class="form-check-input" type="radio" name="tert_other_gender" id="tert_gender" value="Other">
+                            <label class="form-check-label" for="tert_other_gender">Other</label>
                           </div>
-                </form>
-
-                <form>
+                
                     <div class="form-group basics-address">
-                        <label for="formGroupExampleInput">What's your home address?</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput">
+                        <label for="tert_home_address" id="tert_home_address_label">What's your home address?</label>
+                        <input type="text" class="form-control" id="tert_home_address_value">
                     </div>
-                </form>
-
-
-
-                <form>
+              
                         <div class="form-row">
                             <div class="col">
-                                    <label for="inputEmail4">Country</label>
-                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <label for="tert_country" id="tert_country_label">Country</label>
+                                    <select class="custom-select mr-sm-2" id="tert_country_value">
                                         <option selected>Select Country</option>
-                                        <option value="1">Nigeria</option>
-                                        <!-- work on country -->
+                                        <option value="Benin">Benin</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Cote d'viore">Cote d'viore</option>
+                                        <option value="Egypt">Egypt</option>
+                                        <option value="Ethiopia">Ethiopia</option>
+                                        <option value="Ghana">Ghana</option>
+                                        <option value="India">India</option>
+                                        <option value="Kenya">Kenya</option>
+                                        <option value="Nigeria">Nigeria</option>
+                                        <option value="Senegal">Senegal</option>
+                                        <option value="South Africa">South Africa</option>
+                                        <option value="Togo">Togo</option>
+                                        <option value="Uganda">Uganda</option>
+                                        <option value="United States">United States</option>
+                                        <option value="Zimbabwe">Zimbabwe</option>
                                     </select>
                             </div>
                             <div class="col">
-                                    <label for="inputEmail4">State</label>
-                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                            <option selected>Select State</option>
-                                            <option value="1">Lagos</option>
-                                            <!-- work on state -->
-                                        </select>
+                                    <label for="tert_state" id="tert_state_label">State</label>
+                                    <input type="text" class="form-control" id="tert_state_value" placeholder="state..">
                             </div>
                             <div class="col">
-                                    <label for="inputEmail4">City</label>
-                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                            <option selected>Select City</option>
-                                            <option value="2019">Ikeja</option>
-                                            <!-- work on city -->
-                                        </select>
+                                    <label for="tert_city" id="tert_city_label">City</label>    
+                                    <input type="text" class="form-control" id="tert_city_value" placeholder="city..">
                             </div>
                         </div>
                     </form>
             <div class="back-next">
-                    <span class="back-button"><a href="#">Back</a></span>
-                    <span class="next-button"><a href="#">Next</a></span>
+                    <span class="back-button"><a href="#" id="back1">Back</a></span>
+                    <span class="next-button"><a href="#" id="next1">Next</a></span>
             </div>
             </div>
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12" id="teriary-school-info">
+                <h3>Academic Information</h3>
+                <p>This school information will represent your campaign on your campaign page, on your campaign card, and in searches.</p>
+               
+                <form>
+                    <div class="form-group">
+                        <label for="tert_school_name" id="tert_school_name_label">What is the name of your school?</label>
+                        <input type="text" class="form-control" id="tert_school_name_value">
+        
+                        <label for="tert_school_address" id="tert_school_address_label">What is your school address?</label>
+                        <input type="text" class="form-control" id="tert_school_address_value">
+                    </div>                  
+        
+        
+        
+                    <div class="form-row">
+                            <div class="col">
+                                    <label for="tert_select_degree" id="tert_select_degree_label">Select your Degree</label>
+                                    <select class="custom-select mr-sm-2" id="tert_select_degree_value">
+                                            <option selected>Select Degree</option>
+                                            <option value="BSc">BSc</option>
+                                            <option value="BA">BA</option>
+                                            <option value="BEng">BEng</option>
+                                            <option value="PharmD">PharmD</option>
+                                            <option value="MBBS">MBBS</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                            </div>
+                            <div class="col-8">
+                                    <label for="tert_select_course" id="tert_select_course_label">What are you studying?</label>
+                                    <input type="text" class="form-control" id="tert_select_course_value">
+                            </div>
+                        </div>
+        
+        
+        
+                    <div class="form-row">
+                            <div class="col">
+                                    <label for="tert_year_started" id="tert_year_started_label">Year you started</label>
+                                    <select class="custom-select mr-sm-2" id="tert_year_started_value">
+                                            <option selected>Select Year</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2013">2013</option>
+                                            <option value="2012">2012</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2009">2009</option>
+                                            <option value="2008">2008</option>
+                                            <option value="2007">2007</option>
+                                            <option value="2006">2006</option>
+                                            <option value="2005">2005</option>
+                                            <option value="2004">2004</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2000">2000</option>
+                                        </select>
+                            </div>
+                            <div class="col">
+                                    <label for="tert_present_year" id="tert_present_year_label">What year are you in?</label> 
+                                    <select class="custom-select mr-sm-2" id="tert_present_year_value">
+                                            <option selected>Select year</option>
+                                            <option value="SSS3">YEAR 6</option>
+                                            <option value="SSS2">YEAR 5</option>
+                                            <option value="SSS1">YEAR 4</option>
+                                            <option value="JSS3">YEAR 3</option>
+                                            <option value="JSS2">YEAR 2</option>
+                                            <option value="JSS1">YEAR 1</option>
+                                        </select>
+                            </div>
+                            <div class="col">
+                                    <label for="tert_cgpa" id="tert_cgpa_label">What is your CGPA?</label>
+                                    <input type="text" class="form-control" id="tert_cgpa_value">
+                            </div>
+                        </div>
+        
+                <div class="back-next">
+                    <span class="back-button"><a href="#" id="back2">Back</a></span>
+                    <span class="next-button"><a href="#" id="next2">Next</a></span>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12" id="tert_additional_info">
+                <h3>Academic Information</h3>
+                <p>This school information will represent your campaign on your campaign page, on your campaign card, and in searches.</p>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="tert_career_aspi" id="tert_career_aspi_label">What are your career aspirations?</label>
+                        <textarea class="form-control" id="tert_career_aspi_value" rows="2"></textarea>
+        
+                        <label for="tert_challenges" id="tert_challenges_label">What challenges motivate or inspire you?</label>
+                        <textarea class="form-control" id="tert_challenges_value" rows="2"></textarea>
+        
+                        <label for="tert_mantra" id="tert_mantra_label">What's your personal mantra?<span>*optional</span></label>
+                        <input type="text" class="form-control" id="tert_mantra_value">
+        
+                        <label for="tert_mentor" id="tert_mentor_label">Who is your mentor and why?</label>
+                        <input type="text" class="form-control" id="tert_mentor_value">
+        
+                        <label for="tert_story" id="tert_story_label">Tell us a story about yourself</label>
+                        <textarea class="form-control" id="tert_story_value" rows="2"></textarea>
+                    </div>
+                </form>
+                
+                <div class="back-next">
+                        <span class="back-button"><a href="#" id="back3">Back</a></span>
+                        <span class="next-button"><a href="#" id="next3">Next</a></span>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12" id="tert_document_upload">
+                <h3>Upload document</h3>
+                <p>Identify the document you have from the list and upload them. Documents are expected to be either JPEG, MS word (*doc or *docx) or PDF format and no larger than 500kb in size.</p>
+                
+                <form>
+                        <div class="form-group">
+                            <label for="tert_document" id="tert_document_label">Documents</label>
+                                <select class="custom-select mr-sm-2" id="tert_document_value">
+                                    <option selected>Select the type of document to upload</option>
+                                    <option value="Schoolid">School Id</option>
+                                    <option value="BirthCert">Birth Cert</option>
+                            </select>
+                        </div>
+        
+                    <label for="inputuploadfile">Document file</label>
+                    <div class="form-group">
+                        <div class="custom-file">
+                            
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file...</label>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="back-next">
+                        <span class="back-button"><a href="#" id="back4">Back</a></span>
+                        <span class="next-button"><a href="#" id="next4">Next</a></span>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-10 col-md-10 col-sm-12" id="tert_review_info">
+                <h3>Review your information</h3>
+                
+                <div class="image-review"></div>
+                
+                <a href="#" class="image-review-click">Click to change your photo</a>
+                
+
+                <table class="table table-borderless table-sm table-hover">
+                    <tbody>
+                        <tr>
+                            <td id="1"></td>
+                            <td id="1a"></td>
+                            <td><a href="#">Change</a></td>
+                          </tr>
+                          <tr>
+                            <td id="2"></td>
+                            <td id="2a"></td>
+                            <td><a href="#">Change</a></td>
+                          </tr>
+                          <tr>
+                            <td id="3"></td>
+                            <td id="3a"></td>
+                            <td><a href="#">Change</a></td>
+                          </tr>
+                          <tr>
+                            <td id="4"></td>
+                            <td id="4a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                            <td id="5"></td>
+                            <td id="5a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="6"></td>
+                            <td id="6a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="7"></td>
+                            <td id="7a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="8"></td>
+                            <td id="8a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="9"></td>
+                            <td id="9a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="10"></td>
+                            <td id="10a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="11"></td>
+                            <td id="11a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="12"></td>
+                            <td id="12a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="13"></td>
+                            <td id="13a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="14"></td>
+                            <td id="14a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="15"></td>
+                            <td id="15a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="16"></td>
+                            <td id="16a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="17"></td>
+                            <td id="17a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="18"></td>
+                            <td id="18a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="19"></td>
+                            <td id="19a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="back-next">
+                    <span class="back-button"><a href="#" id="back5">Edit</a></span>
+                    <button type="submit" name="button" class="btn btn-success sec-submit-button">Submit</button>
+                </div>
+            </div>
+
+
+
             <div class="col-lg-6 col-md-6 col-sm-12 basic-side-bar">
                 <img src="./img/secschoolimage.png" alt="laptop" class="img-responsive" style="width: 80%;">    
                 <h3>Take ScholarX everywhere you go</h3>
@@ -320,9 +590,9 @@
 
 
 <!-- SCRIPTS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="./js/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="./js/main.js"></script>
+<script src="./js/tertiary_multiform.js"></script>
 </body>
 </html>

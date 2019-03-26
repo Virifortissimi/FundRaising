@@ -99,7 +99,7 @@
     <!-- TOP HEADER START -->
     <div class="row searchresult-header">
         <div class="container">
-            <h2>You are joining us as a school. </h2>
+            <h2>You are creating a campaign as a school. </h2>
         </div>
     </div>
     <!-- TOP HEADER ENDS -->
@@ -107,25 +107,22 @@
 
     <div class="row basics-form">
         <div class="container">
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12" id="school_basic_info">
                 <h3>Basic Information</h3>
                 <p>This basic information will represent your campaign on your  campaign page, on your campaign card, and in searches.</p>
                 <div class="upload-pics">
                     <a href="#">Click to upload your photo</a>
                 </div>
                 <form>
-
-                        <form>
-                                <div class="form-group basics-address">
-                                    <label for="formGroupExampleInput">What is the name of your school?</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput">
-                                </div>
-                            </form>
+                    <div class="form-group basics-address">
+                        <label for="school_name" id="school_name_label">What is the name of your school?</label>
+                        <input type="text" class="form-control" id="school_name_value">
+                    </div>
             
-                    <label for="inputEmail4">When was your school established?</label>
+                    <label for="school_established" id="school_established_label">When was your school established?</label>
                     <div class="form-row">
                         <div class="col">
-                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <select class="custom-select mr-sm-2" id="school_established_day">
                                     <option selected>Select Day</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -161,7 +158,7 @@
                                 </select>
                         </div>
                         <div class="col">
-                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <select class="custom-select mr-sm-2" id="school_established_month">
                                         <option selected>Select Month</option>
                                         <option value="1">January</option>
                                         <option value="2">February</option>
@@ -178,7 +175,7 @@
                                     </select>
                         </div>
                         <div class="col">
-                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <select class="custom-select mr-sm-2" id="school_established_year">
                                         <option selected>Select Year</option>
                                         <option value="2019">2019</option>
                                         <option value="2018">2018</option>
@@ -245,28 +242,33 @@
                 <form>
                         <div class="form-row">
                             <div class="col">
-                                    <label for="inputEmail4">Country</label>
-                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <label for="school_country" id="school_country_label">Country</label>
+                                    <select class="custom-select mr-sm-2" id="school_country_value">
                                         <option selected>Select Country</option>
-                                        <option value="1">Nigeria</option>
-                                        <!-- work on country -->
+                                        <option value="Benin">Benin</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Cote d'viore">Cote d'viore</option>
+                                        <option value="Egypt">Egypt</option>
+                                        <option value="Ethiopia">Ethiopia</option>
+                                        <option value="Ghana">Ghana</option>
+                                        <option value="India">India</option>
+                                        <option value="Kenya">Kenya</option>
+                                        <option value="Nigeria">Nigeria</option>
+                                        <option value="Senegal">Senegal</option>
+                                        <option value="South Africa">South Africa</option>
+                                        <option value="Togo">Togo</option>
+                                        <option value="Uganda">Uganda</option>
+                                        <option value="United States">United States</option>
+                                        <option value="Zimbabwe">Zimbabwe</option>
                                     </select>
                             </div>
                             <div class="col">
-                                    <label for="inputEmail4">State</label>
-                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                            <option selected>Select State</option>
-                                            <option value="1">Lagos</option>
-                                            <!-- work on state -->
-                                        </select>
+                                    <label for="school_state" id="school_state_label">State</label>
+                                        <input type="text" class="form-control" id="school_state_value" placeholder="state..">
                             </div>
                             <div class="col">
-                                    <label for="inputEmail4">City</label>
-                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                            <option selected>Select City</option>
-                                            <option value="2019">Ikeja</option>
-                                            <!-- work on city -->
-                                        </select>
+                                    <label for="school_city" id="school_city_label">City</label>
+                                    <input type="text" class="form-control" id="school_city_value" placeholder="state..">
                             </div>
                         </div>
                     </form>
@@ -274,16 +276,150 @@
 
                     <form>
                             <div class="form-group basics-address">
-                                <label for="formGroupExampleInput">What's the population in your school?</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                <label for="school_population" id="school_population_label">What's the population in your school?</label>
+                                <input type="text" class="form-control" id="school_population_value">
                             </div>
                         </form>
         
             <div class="back-next">
-                    <span class="back-button"><a href="#">Back</a></span>
-                    <span class="next-button"><a href="#">Next</a></span>
+                    <span class="back-button"><a href="#" id="back1">Back</a></span>
+                    <span class="next-button"><a href="#" id="next1">Next</a></span>
             </div>
             </div>
+
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12" id="school_project_info">
+                <h3>Project Information</h3>
+                <p>This information will represent your campaign on your campaign page, on your campaign card, and in searches.</p>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="school_project_title" id="school_project_title_label">What's the title of your project'?</label>
+                        <input type="text" class="form-control" id="school_project_title_value">
+        
+                        <label for="school_project" id="school_project_label">Tell us about your project and it's goals?</label>
+                        <textarea class="form-control" id="school_project_value" rows="2"></textarea>
+        
+                        <label for="school_benefit" id="school_benefit_label">How many students would benefit from your project?</label>
+                        <input type="text" class="form-control" id="school_benefit_value">
+                    </div>
+                </form>
+                
+                <div class="back-next">
+                        <span class="back-button"><a href="#" id="back2">Back</a></span>
+                        <span class="next-button"><a href="#" id="next2">Next</a></span>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12" id="school_proj_doc_upload">
+                <h3>Upload document</h3>
+                <p>Identify the document you have from the list and upload them. Documents are expected to be either JPEG, MS word (*doc or *docx) or PDF format and no larger than 500kb in size.</p>
+                
+                <form>
+                        <div class="form-group">
+                            <label for="school_document" id="school_document_label">Document type <span>*optional</span> </label>
+                                <select class="custom-select mr-sm-2" id="school_document_value">
+                                    <option selected>Select the type of document to upload</option>
+                                    <option value="Schoolid">School Id</option>
+                                    <option value="BirthCert">Birth Cert</option>
+                            </select>
+                        </div>
+        
+                    <label for="inputuploadfile">Document file</label>
+                    <div class="form-group">
+                        <div class="custom-file">
+                            
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file...</label>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="back-next">
+                        <span class="back-button"><a href="#" id="back3">Back</a></span>
+                        <span class="next-button"><a href="#" id="next3">Next</a></span>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-10 col-md-10 col-sm-12" id="school_proj_review">
+                <h3>Review your information</h3>
+                
+                <div class="image-review"></div>
+                
+                <a href="#" class="image-review-click">Click to change your photo</a>
+                
+
+                <table class="table table-borderless table-sm table-hover">
+                    <tbody>
+                        <tr>
+                            <td id="1"></td>
+                            <td id="1a"></td>
+                            <td><a href="#">Change</a></td>
+                          </tr>
+                          <tr>
+                            <td id="2"></td>
+                            <td id="2a"></td>
+                            <td><a href="#">Change</a></td>
+                          </tr>
+                          <tr>
+                            <td id="3"></td>
+                            <td id="3a"></td>
+                            <td><a href="#">Change</a></td>
+                          </tr>
+                          <tr>
+                            <td id="4"></td>
+                            <td id="4a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="5"></td>
+                            <td id="5a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="6"></td>
+                            <td id="6a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="7"></td>
+                            <td id="7a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="8"></td>
+                            <td id="8a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="9"></td>
+                            <td id="9a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="10"></td>
+                            <td id="10a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="back-next">
+                    <span class="back-button"><a href="#" id="back4">Edit</a></span>
+                    <button type="submit" name="button" class="btn btn-success sec-submit-button">Submit</button>
+                </div>
+            </div>
+
+
+
+
+
             <div class="col-lg-6 col-md-6 col-sm-12 basic-side-bar">
                 <img src="./img/secschoolimage.png" alt="laptop" class="img-responsive" style="width: 80%;">    
                 <h3>Take ScholarX everywhere you go</h3>
@@ -320,9 +456,9 @@
 
 
 <!-- SCRIPTS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="./js/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="./js/main.js"></script>
+<script src="./js/school_mulitiform.js"></script>
 </body>
 </html>

@@ -1,3 +1,41 @@
+/* NEW STYLES */
+.footer-links p {
+    margin-left: 0px;
+}
+@media (max-width:357px) {
+    .navbar-light .navbar-toggler {
+        margin-left: -30px;
+    }
+    img.appstore-button {
+        margin-left: 50px;
+        margin-top: 10px;
+        width: 156px;
+    }
+}
+.carousel-caption {
+    position: absolute;
+    right: 23%;
+    bottom: 66px;
+    left: 13%;
+    padding-top: 11px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+}
+.carousel-caption div {
+    margin-top: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* NAVBAR  */
 a.navbar-brand {
     margin-left: 45px;
@@ -41,26 +79,9 @@ hr.vertical {
 
 
 /* CAROUSEL */
-.carousel-caption {
-    position: absolute;
-    right: 23%;
-    bottom: 109px;
-    left: 13%;
-    padding-top: 11px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: left;
-}
 .carousel-caption h1 {
     font-size: 54px !important;
     text-align: left;
-}
-.carousel-caption h1 {
-    font-size: 45px;
-    text-align: left;
-}
-.carousel-caption div {
-    margin-top: 185px;
 }
 /* CAROUSEL ENDS */
 
