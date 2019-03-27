@@ -1,6 +1,6 @@
 /* NEW STYLES */
 .footer-links p {
-    margin-left: 0px;
+    margin-left: 0px !important;
 }
 @media (max-width:357px) {
     .navbar-light .navbar-toggler {
@@ -28,10 +28,10 @@
 div#village_sponsor_content {
     padding-top: 200px;
 }
-div#village_individual, footer#village_footer_individual {
+div#village_individual, footer#village_footer_individual, div#student_joinus, footer#student_joinus_footer {
     float: right;
 }
-div#village_organization, footer#village_footer_organization {
+div#village_organization, footer#village_footer_organization, div#sponsor_joinus, footer#sponsor_joinus_footer {
     margin-left: 0px;
 }
 div#campaign-panel {
@@ -614,7 +614,7 @@ form.form-inline.impact-password {
   .iti-flag {background-image: url("../img/flags@2x.png");}
 }
 .row.joinus-page {
-    margin-top: 60px;
+    margin-top: 115px;
 }
 h2.joinus-header {
     margin-bottom: 50px;
@@ -738,10 +738,14 @@ form.scholarship-tel {
     text-align: center;
 }
 .moe {
-    margin-top: 40px;
+    margin-top: 49px;
     border-top: 5px solid #A13DAB;
-    width: 130px;
+    width: 150px;
     text-align: center;
+}
+.moe_image {
+    /* width: 100%;  */
+    border-radius: 50%;
 }
 .tayo, .adeolu {
     border-top: 5px solid #1149FF;
