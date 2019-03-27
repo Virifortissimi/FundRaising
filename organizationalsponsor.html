@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScholarX - Secondary Academics</title>
+
+<!-- STYLES -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootscrap.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <!-- NAVBAR STARTS -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="logo" class="img-responsive"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="form-inline navbar-form">
+            <div class="input-group navbar-input">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><img src="./img/search.png" alt="search"></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Search for scholarship..." aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Students
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Create Fund Request</a>
+                        <a class="dropdown-item" href="#">Find Scholarship</a>
+                        <a class="dropdown-item" href="#">Get Help</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Sponsor
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Fund Education</a>
+                        <a class="dropdown-item" href="#">Start Scholarship Fund</a>
+                        <a class="dropdown-item" href="#">Get Help</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./img/elipsis.png" alt="menu icons">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item disabled" href="#">About Us</a>
+                        <a class="dropdown-item" href="./theteam.html">Team</a>
+                        <a class="dropdown-item" href="./theteam.html#advisors-section">Advisers</a>
+                        <a class="dropdown-item" href="./theteam.html#media-section">Media Features</a>
+                        <a class="dropdown-item" href="./inpact.html">Impact</a>
+                        <a class="dropdown-item" href="./blog.html">Blog</a>
+                        <a class="dropdown-item disabled" href="#">Download App</a>
+                        <a class="dropdown-item" href="#">IOS</a>
+                        <a class="dropdown-item" href="#">Android</a>
+                        <a class="dropdown-item" href="#">Follow Us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <hr class="vertical">
+                </li>
+                <!-- <span><img src="./img/Ellipse.png" alt="user img" class="img-responsive img-rounded"></span> -->
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span><img src="./img/Ellipse.png" alt="user img" class="img-responsive img-rounded">Ronke Lancaster</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Admin</a>
+                            <a class="dropdown-item" href="#">My Campaigns</a>
+                            <a class="dropdown-item" href="#">Village</a>
+                            <a class="dropdown-item" href="#">SkillsFund</a>
+                            <a class="dropdown-item" href="#">Log Out</a>
+                        </div>
+                    </li>
+                <li class="nav-item">
+                   
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+
+
+
+<!-- TOP HEADER START -->
+<div class="row searchresult-header">
+        <div class="container">
+            <h2>I'm making an inpact in education as an organization </h2>
+        </div>
+    </div>
+    <!-- TOP HEADER ENDS -->
+
+
+<div class="row  basics-form">
+    <div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-12" id="org_sponsor_basics">
+            <h3>The Basics</h3>
+            <p>We will need these information to confirm you.</p>
+            <div class="upload-pics">
+                <a href="#">Click to upload your photo</a>
+            </div>
+            <form>
+                    <label for="org_sponsor_orgname" id="org_sponsor_orgname_label">What's your organizations' name?</label>
+                    <input type="text" class="form-control" id="org_sponsor_orgname_value">
+                    <label for="org_sponsor_industry" id="org_sponsor_industry_label">What's your industry?</label> 
+                    <select class="custom-select mr-sm-2" id="org_sponsor_industry_value">
+                        <option selected>Select industry</option>
+                        <option value="EdTech">EdTech</option>
+                        <option value="Fintech">FinTech</option>
+                        <option value="EdFintech">EdFintech</option>
+                    </select>
+                    <label for="org_sponsor_address" id="org_sponsor_address_label">What's your organizations' address?</label>
+                    <input type="text" class="form-control" id="org_sponsor_address_value">
+                    <div class="form-row">
+                        <div class="col">
+                                <label for="org_sponsor_country" id="org_sponsor_country_label">Country</label>
+                                <select class="custom-select mr-sm-2" id="org_sponsor_country_value">
+                                    <option selected>Select Country</option>
+                                    <option value="Benin">Benin</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Cote d'viore">Cote d'viore</option>
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="Ethiopia">Ethiopia</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="India">India</option>
+                                    <option value="Kenya">Kenya</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="Senegal">Senegal</option>
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="Togo">Togo</option>
+                                    <option value="Uganda">Uganda</option>
+                                    <option value="United States">United States</option>
+                                    <option value="Zimbabwe">Zimbabwe</option>
+                                </select>
+                        </div>
+                        <div class="col">
+                                <label for="org_sponsor_state" id="org_sponsor_state_label">State</label>
+                                <input type="text" class="form-control" id="org_sponsor_state_value" placeholder="state..">
+                        </div>
+                        <div class="col">
+                                <label for="org_sponsor_city" id="org_sponsor_city_label">City</label>    
+                                <input type="text" class="form-control" id="org_sponsor_city_value" placeholder="city..">
+                        </div>
+                    </div>
+                </form>
+        <div class="back-next">
+                <span class="back-button"><a href="#" id="back1">Back</a></span>
+                <span class="next-button"><a href="#" id="next1">Next</a></span>
+        </div>
+        </div>
+
+
+         <div class="col-lg-6 col-md-6 col-sm-12" id="org_sponsor_info">
+            <h3>Additional Information</h3>
+            <p>We will need these information to confirm you.</p>
+           
+            <form>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="org_sponsor_cac_number" id="org_sponsor_cac_number_label">Registration Number(C.A.C)</label>
+                        <input type="text" class="form-control" id="org_sponsor_cac_number_value">
+                    </div>
+                    <div class="col">
+                        <label for="org_sponsor_cac_tin" id="org_sponsor_cac_tin_label">Tax Identification Number</label>
+                        <input type="text" class="form-control" id="org_sponsor_cac_tin_value">
+                    </div>
+                </div>
+                
+                <label for="org_sponsor_value_mission" id="org_sponsor_value_mission_label">Tell us about your organization mission and values?</label>
+                <textarea class="form-control" id="org_sponsor_value_mission_value" rows="2"></textarea>
+                
+                <label for="org_sponsor_whyjoin" id="org_sponsor_whyjoin_label">Why do your want to join us as a sponsor?</label>
+                <textarea class="form-control" id="org_sponsor_whyjoin_value" rows="2"></textarea>
+                
+                <label for="org_sponsor_website" id="org_sponsor_website_label">Website Link</label>
+                <input type="text" class="form-control" id="org_sponsor_website_value">
+            </form>
+            <div class="back-next">
+                <span class="back-button"><a href="#" id="back2">Back</a></span>
+                <span class="next-button"><a href="#" id="next2">Next</a></span>
+            </div>
+        </div>
+
+
+
+
+        <div class="col-lg-6 col-md-6 col-sm-12" id="org_sponsor_upload">
+                <h3>Upload document</h3>
+                <p>Identify the document you have from the list and upload them. Documents are expected to be either JPEG, MS word (*doc or *docx) or PDF format and no larger than 500kb in size.</p>
+                
+                <form>
+                        <div class="form-group">
+                            <label for="org_sponsor_document" id="org_sponsor_document_label">Documents</label>
+                                <select class="custom-select mr-sm-2" id="org_sponsor_document_value">
+                                    <option selected>Select the type of document to upload</option>
+                                    <option value="Schoolid">School Id</option>
+                                    <option value="BirthCert">Birth Cert</option>
+                            </select>
+                        </div>
+        
+                    <label for="inputuploadfile">Document file</label>
+                    <div class="form-group">
+                        <div class="custom-file">
+                            
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file...</label>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="back-next">
+                        <span class="back-button"><a href="#" id="back3">Back</a></span>
+                        <span class="next-button"><a href="#" id="next3">Next</a></span>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-10 col-md-10 col-sm-12" id="org_sponsor_review_info">
+                    <h3>Review your information</h3>
+                    
+                    <div class="image-review"></div>
+                    
+                    <a href="#" class="image-review-click">Click to change your photo</a>
+                    
+    
+                    <table class="table table-borderless table-sm table-hover">
+                        <tbody>
+                            <tr>
+                                <td id="1"></td>
+                                <td id="1a"></td>
+                                <td><a href="#">Change</a></td>
+                              </tr>
+                              <tr>
+                                <td id="2"></td>
+                                <td id="2a"></td>
+                                <td><a href="#">Change</a></td>
+                              </tr>
+                              <tr>
+                                <td id="3"></td>
+                                <td id="3a"></td>
+                                <td><a href="#">Change</a></td>
+                              </tr>
+                              <tr>
+                                <td id="4"></td>
+                                <td id="4a"></td>
+                                <td><a href="#">Change</a></td>
+                            </tr>
+                                <td id="5"></td>
+                                <td id="5a"></td>
+                                <td><a href="#">Change</a></td>
+                            </tr>
+                            <tr>
+                                <td id="6"></td>
+                                <td id="6a"></td>
+                                <td><a href="#">Change</a></td>
+                            </tr>
+                            <tr>
+                                <td id="7"></td>
+                                <td id="7a"></td>
+                                <td><a href="#">Change</a></td>
+                            </tr>
+                            <tr>
+                                <td id="8"></td>
+                                <td id="8a"></td>
+                                <td><a href="#">Change</a></td>
+                            </tr>
+                            <tr>
+                                <td id="9"></td>
+                                <td id="9a"></td>
+                                <td><a href="#">Change</a></td>
+                            </tr>
+                            <tr>
+                                <td id="10"></td>
+                                <td id="10a"></td>
+                                <td><a href="#">Change</a></td>
+                            </tr>
+                            <tr>
+                                <td id="10"></td>
+                                <td id="10a"></td>
+                                <td><a href="#">Change</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+    
+                    <div class="back-next">
+                        <span class="back-button"><a href="#" id="back4">Edit</a></span>
+                        <button type="submit" name="button" class="btn btn-success sec-submit-button">Submit</button>
+                    </div>
+                </div>
+
+
+
+
+
+
+        <div class="col-lg-6 col-md-6 col-sm-12 basic-side-bar">
+            <img src="./img/secschoolimage.png" alt="laptop" class="img-responsive" style="width: 80%;">    
+            <h3>Take ScholarX everywhere you go</h3>
+            <ul class="n0-list">
+                    <li class="marklist">Find tailor made scholarship just for you</li>
+                    <li class="marklist">Access to over 100,000 Scholarships</li>
+                    <li class="marklist">Get scholarship reminders and notification</li>
+                </ul>
+                <div class="container-fluid basic-get-app">
+                    <span class="basic-googleplay"><a href="#"><img src="./img/Googleplay.png" alt="GooglePlay" class="playstore-logo"></a></span>
+                    <span><a href="#"><img src="./img/Appstore.png" alt="GooglePlay"></a></span>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+            <div class="row join-us-footer">
+                <div class="container">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <p> &copy; 2019 ScholarX. All rights resrved</p>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12 social-black">
+                        <span class="social-start"><a href="#"><img src="./img/facebook-black.png" alt="facebook" class="img-responsive facebook-black"></a></span>
+                        <span><a href="#"><img src="./img/twitter-black.png" alt="facebook" class="img-responsive twitter-black"></a></span>
+                        <span><a href="#"><img src="./img/instagram-black.png" alt="facebook" class="img-responsive instagram-black"></a></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER ENDS -->
+
+
+<!-- SCRIPTS -->
+<script src="./js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./js/org_sponsor_multiform.js"></script>
+</body>
+</html>

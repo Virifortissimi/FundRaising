@@ -25,9 +25,18 @@
 .carousel-caption div {
     margin-top: 110px;
 }
-
-
-
+div#village_sponsor_content {
+    padding-top: 200px;
+}
+div#village_individual, footer#village_footer_individual {
+    float: right;
+}
+div#village_organization, footer#village_footer_organization {
+    margin-left: 0px;
+}
+div#campaign-panel {
+    padding: 0px;
+}
 
 
 
