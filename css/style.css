@@ -37,8 +37,198 @@ div#village_organization, footer#village_footer_organization, div#sponsor_joinus
 div#campaign-panel {
     padding: 0px;
 }
+.quartz {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 126px;
+    left: 43px;
+}
+.disruptafrica {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 127px;
+    left: 316px;
+}
+.techcabal {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 195px;
+    left: 248px;
+}
+.techpoint {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 332px;
+    left: 111px;
+}
+.businessday {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 400px;
+    left: 43px;
+}
+.innovationvillage {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 398px;
+    left: 315px;
+}
+.youtube {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 263px;
+    left: 180px;
+}
+.soundcloud {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 330px;
+    left: 246px;
+}
+.ynaija {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 195px;
+    left: 112px;
+}
+@media (max-width: 600px) {
+    .the_team_footer {
+        margin-top: 580px;
+    }
+}
+@media (max-width: 450px) {
+    .quartz {
+        left: 13px;
+    }
+    .disruptafrica {
+        left: 286px;
+    }
+    .techcabal {
+        left: 218px;
+    }
+    .techpoint {
+        left: 81px;
+    }
+    .businessday {
+        left: 13px;
+    }
+    .innovationvillage {
+        left: 285px;
+    }
+    .youtube {
+        left: 150px;
+    }
+    .soundcloud {
+        left: 216px;
+    }
+    .ynaija {
+        left: 82px;
+    }
+}
+@media (max-width: 330px) {
+    .quartz {
+        width: 50px;
+        height: 50px;
+        top: 140px;
+        left: 29px;
+    }
+    .disruptafrica {
+        width: 50px;
+        height: 50px;
+        top: 141px;
+        left: 225px;
+    }
+    .techcabal {
+        width: 50px;
+        height: 50px;
+        top: 190px;
+        left: 176px;
+    }    
+    .techpoint {
+        width: 50px;
+        height: 50px;
+        top: 288px;
+        left: 78px;
+    }
+    .businessday {
+        width: 50px;
+        height: 50px;
+        top: 336px;
+        left: 29px;
+    }
+    .innovationvillage {
+        width: 50px;
+        height: 50px;
+        top: 337px;
+        left: 224px;
+    }
+    .youtube {
+        width: 50px;
+        height: 50px;
+        top: 239px;
+        left: 127px;
+    }
+    .soundcloud {
+        width: 50px;
+        height: 50px;
+        top: 288px;
+        left: 175px;
+    }    
+    .ynaija {
+        width: 50px;
+        height: 50px;
+        top: 190px;
+        left: 78px;
+    }
+}
 
 
+
+
+
+
+@media (max-width: 769px) {
+    div#village_individual, footer#village_footer_individual, div#student_joinus, footer#student_joinus_footer {
+        display: inline-block;
+        float: left;
+    }
+    div#village_organization, footer#village_footer_organization, div#sponsor_joinus, footer#sponsor_joinus_footer {
+        margin-left: 107px;
+    }
+}
+@media (max-width: 601px) {
+    div#village_individual, footer#village_footer_individual, div#student_joinus, footer#student_joinus_footer {
+        display: inline-block;
+        margin-left: 230px;
+        margin-bottom: 45px;
+        float: left;
+    }
+    div#village_organization, footer#village_footer_organization, div#sponsor_joinus, footer#sponsor_joinus_footer {
+        margin-left: 107px;
+    }
+}
+@media (max-width: 420px) {
+    div#village_individual, footer#village_footer_individual, div#student_joinus, footer#student_joinus_footer {
+        margin-left: 111px;
+    }
+}
+@media (max-width: 375px) {
+    div#village_organization, footer#village_footer_organization, div#sponsor_joinus, footer#sponsor_joinus_footer {
+        margin-left: 140px;
+    }
+    div#village_individual, footer#village_footer_individual, div#student_joinus, footer#student_joinus_footer {
+        margin-left: 140px;
+    }
+}
 
 
 
@@ -343,6 +533,7 @@ footer .footer-section {
     background-color: #0C5061;
     color: white;
     padding-top: 70px;
+    margin-top: 150px;
 }
 .footer-section h2 {
     font-size: 30px;
