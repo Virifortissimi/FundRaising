@@ -1,3 +1,9 @@
+.panel-default {
+    border-color: #ddd;
+    box-shadow: 1px 1px 1px grey;
+}
+
+
 /* NEW STYLES */
 .footer-links p {
     margin-left: 0px !important;
@@ -198,7 +204,7 @@ div#campaign-panel {
 
 @media (max-width: 769px) {
     div#village_individual, footer#village_footer_individual, div#student_joinus, footer#student_joinus_footer {
-        display: inline-block;
+        /* display: inline-block; */
         float: left;
     }
     div#village_organization, footer#village_footer_organization, div#sponsor_joinus, footer#sponsor_joinus_footer {
@@ -207,7 +213,7 @@ div#campaign-panel {
 }
 @media (max-width: 601px) {
     div#village_individual, footer#village_footer_individual, div#student_joinus, footer#student_joinus_footer {
-        display: inline-block;
+        /* display: inline-block; */
         margin-left: 230px;
         margin-bottom: 45px;
         float: left;
@@ -876,13 +882,14 @@ form.scholarship-tel {
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-    
+    width: 100%;
 }
 .theteam-jumbotron h2 {
     color: white;
-    margin: 121px 0px 0px 36%;
+    margin: 121px 0px 0px 0px;
     font-size: 56px;
     font-weight: 600;
+    text-align: center;
 }
 .row.theteam-row {
     margin-top: 50px;
@@ -1362,6 +1369,212 @@ button.see-more-campaign {
 /* VILLAGE ENDS */
 
 
+/* SCHOLARX VILLAGE */
+.scholarxvillage-jumbotron {
+    background-image: url(../img/scholarxvillage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+.scholarxvillage-jumbotron h2 {
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.scholarxvillage-jumbotron div {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* SCHOLARX VILLAGE ENDS */
+
+/* SCHOLARX STUDENT CAMPAIGN */
+.row.fundraising-title {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.fundraising-title h2 {
+    font-size: 32px;
+}
+.scholarx-fundraising-image img {
+    width: 100%;
+}
+h3.scholarx-campaign-name {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+p.scholarx-campaign-address, p.scholarx-campaign-age, p.scholarx-campaign-class {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+h4.scholarx-campaign-amount-raised {
+    font-size: 24px;
+    margin-top: 30px;
+}
+h5.scholarx-campaign-percentage-raised {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+button.btn.btn-campaign-green {
+    background: #8DB859;
+    border-radius: 0px;
+    color: white;
+}
+span.input-group-text.scholarx-campaign-naira, input.form-control.scholarx-campaign-input {
+    background: white;
+    border-radius: 0px;
+    border: 1px solid #dbd5d5;
+}
+h5#scholarx-campaign-name-label {
+    font-size: 28px;
+}
+.col-lg-4.col-md-4.col-sm-12.scholarx-campaign-modal-image img {
+    width: 100%;
+}
+.donating-section {
+    border: 1px solid #e5dbdb;
+    padding: 0px 15px;
+}
+.donating-section h5 {
+    font-size: 16px;
+    margin: 15px 0px;
+}
+.total {
+    margin-top: 15px;
+    border-top: 1px solid #e9e3e3;
+    padding: 5px 20px;
+    /* margin-left: -15px; */
+    margin: 15px -15px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pay-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #a59f9f;
+    padding-bottom: 5px;
+}
+.pay-section a {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+span.pay-card {
+    margin-right: 10px;
+}
+.pay-section-active-style a {
+    color: #8DB859;
+    border-bottom: 4px solid #8DB859;
+    padding-bottom: 6px;
+    text-decoration: none;
+}
+.scholarx-fundraising-form label {
+    font-size: 14px;
+}
+.scholarx-fundraising-form label span {
+    font-size: 12px;
+}
+.scholarx-fundraising-form input {
+    border-radius: 0px;
+}
+.scholarx-fundraising-form button {
+    width: 100%;
+    padding: 7px 0px;
+    margin-top: 10px;
+    border: 1px solid #8DB859;
+    color: white;
+    background: #8DB859;
+}
+.row.scholarx-campaign-details {
+    margin-top: 50px;
+}
+.scholarx-campaign-details h3 {
+    font-size: 24px;
+}
+.scholarx-campaign-details p {
+    font-size: 16px;
+}
+.student-information td {
+    font-size: 16px;
+}
+.student-motivation h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+p.answer {
+    font-size: 16px;
+    font-weight: 500;
+}
+.donation-list-table tbody tr td:nth-child(2) {
+    color: #4A90E2;
+    font-size: 16px;
+    /* margin-left: auto; */
+    float: right;
+}
+.donation-list-table th {
+    font-size: 24px;
+}
+.donation-list-table td p {
+    font-size: 14px;
+}
+.donation-list-table td {
+    font-size: 16px;
+}
+.row.post-message-section {
+    margin-top: 15px;
+}
+.show-support h4 {
+    font-size: 24px;
+}
+.show-support button, #pop-up-message button {
+    background: white;
+    padding: 9px;
+    border: 2px solid #99bf6a;
+    color: #99bf6a;
+    border-radius: 5px;
+}
+#pop-up-message input, #pop-up-message textarea {
+    border-radius: 0px;
+}
+#pop-up-message label {
+    font-size: 16px;
+    color: #99bf6a;
+    font-weight: 500;
+}
+#pop-up-message {
+    margin: 20px 0px;
+}
+.all-posted-messages img {
+    float: left;
+    margin-right: 20px;
+}
+.messages-posted p {
+    font-size: 16px;
+    margin-left: 75px;
+}
+.all-posted-messages h5 {
+    font-size: 16px;
+    padding-top: 10px;
+}
+span.time-posted {
+    color: #9B9B9B;
+    font-size: 12px;
+}
+/* SCHOLARX STUDENT CAMPAIGN ENDS */
+
+
+
 /* HOME PAGE MEDIA QUERY */
 @media (max-width: 1050px) {
     .carousel-caption div {
@@ -1837,13 +2050,15 @@ button.see-more-campaign {
         align-items: center;
     }
     .theteam-jumbotron h2 {
-        margin: 121px 0px 0px 21%;
+        margin: 121px 0px 0px 0px;
+        text-align: center;
     }
 }
 @media (max-width: 521px) {
     .theteam-jumbotron h2 {
-        margin: 165px 0px 0px 21%;
+        margin: 165px 0px 0px 0px;
         font-size: 40px;
+        text-align: center;
     }
 }
 @media (max-width: 472px) {
