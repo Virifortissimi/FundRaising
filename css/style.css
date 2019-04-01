@@ -43,6 +43,9 @@ div#village_organization, footer#village_footer_organization, div#sponsor_joinus
 div#campaign-panel {
     padding: 0px;
 }
+span.skillsfund-new {
+    color: red !important;
+}
 .quartz {
     width: 70px;
     height: 70px;
@@ -1392,7 +1395,14 @@ button.see-more-campaign {
     margin-top: 40px;
     text-align: center;
 }
-
+.scholarxvillage-jumbotron h3 {
+    font-size: 42px;
+}
+@media (max-width: 600px) {
+    .scholarxvillage-jumbotron h3 {
+        font-size: 32px;
+    }
+}
 /* SCHOLARX VILLAGE ENDS */
 
 /* SCHOLARX STUDENT CAMPAIGN */
