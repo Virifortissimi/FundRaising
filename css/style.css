@@ -46,6 +46,20 @@ div#campaign-panel {
 span.skillsfund-new {
     color: red !important;
 }
+@media (max-width: 376px) {
+    span.forgot-passsword {
+        margin-left: 50px !important;
+    }
+    span.social-start {
+        margin-left: 96% !important;
+    }
+    .sponsors-section a {
+        font-size: 15px !important;
+    }
+    .navbar-light .navbar-toggler {
+        margin-left: -50px !important;
+    }
+}
 .quartz {
     width: 70px;
     height: 70px;
@@ -939,7 +953,7 @@ form.scholarship-tel {
     text-align: center;
 }
 .moe {
-    margin-top: 49px;
+    margin-top: 43px;
     border-top: 5px solid #A13DAB;
     width: 150px;
     text-align: center;
