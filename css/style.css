@@ -18,6 +18,10 @@
         width: 156px;
     }
 }
+.trusted_emphasis {
+    text-decoration: underline;
+    font-size: 18px;
+}
 .carousel-caption {
     position: absolute;
     right: 23%;
@@ -899,7 +903,7 @@ form.scholarship-tel {
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-    width: 100%;
+    width: 100% !important;
 }
 .theteam-jumbotron h2 {
     color: white;
