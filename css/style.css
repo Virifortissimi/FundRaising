@@ -5,6 +5,50 @@
 
 
 /* NEW STYLES */
+@media (max-width: 768px) {
+    .village-funding-img {
+        margin-left: 0px !important;
+    }
+    .skillsfund-img {
+        margin-left: 0px !important;
+    }
+}
+@media (max-width: 601px) {
+    .village-funding-img {
+        margin-left: 200px !important;
+    }
+    .skillsfund-img {
+        margin-left: 235px !important;
+    }
+}
+@media (max-width: 430px) {
+    .village-funding-img {
+        margin-left: 115px !important;
+    }
+    .skillsfund-img {
+        margin-left: 155px !important;
+    }
+}
+@media (max-width: 375px) {
+    .village-funding-img {
+        margin-left: 70px !important;
+    }
+    .skillsfund-img {
+        margin-left: 110px !important;
+    }
+}
+ul.no-list.signup-ul {
+    margin-left: 35px;
+}
+
+
+
+
+
+
+
+
+
 .footer-links p {
     margin-left: 0px !important;
 }
@@ -685,10 +729,16 @@ h2.user-header {
 img.img-responsive.managecampaign {
     margin-left: 105px;
 }
+.village-funding-img {
+    margin-left: 20px;
+}
 img.img-responsive.sponsorstudent {
     margin-left: 131px;
     width: 53px;
     height: 41px;
+}
+.skillsfund-img {
+    margin-left: 61px;
 }
 img.img-responsive.skillsfund {
     width: 46.52px;
@@ -701,7 +751,7 @@ img.img-responsive.Quickstaff {
 }
 .user-content div {
     float: left;
-    margin-bottom: 51px;
+    margin-bottom: 20px;
 }
 .col-lg-4.col-md-4.col-sm-12.user-content1 {
     margin-top: 30px;
@@ -898,7 +948,7 @@ form.scholarship-tel {
 
 /* THE TEAM */
 .theteam-jumbotron {
-    background-image: url(../img/theteam.png);
+    background-image: url(../img/theteam.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
