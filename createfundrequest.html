@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScholarX - School Project Info</title>
+
+<!-- STYLES -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootscrap.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <!-- NAVBAR STARTS -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="logo" class="img-responsive"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="form-inline navbar-form">
+            <div class="input-group navbar-input">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><img src="./img/search.png" alt="search"></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Search for scholarship..." aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Students
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Create Fund Request</a>
+                        <a class="dropdown-item" href="#">Find Scholarship</a>
+                        <a class="dropdown-item" href="#">Get Help</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sponsor
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Fund Education</a>
+                        <a class="dropdown-item" href="#">Start Scholarship Fund</a>
+                        <a class="dropdown-item" href="#">Get Help</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./img/elipsis.png" alt="menu icons">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item disabled" href="#">About Us</a>
+                        <a class="dropdown-item" href="./theteam.html">Team</a>
+                        <a class="dropdown-item" href="./theteam.html#advisors-section">Advisers</a>
+                        <a class="dropdown-item" href="./theteam.html#media-section">Media Features</a>
+                        <a class="dropdown-item" href="./inpact.html">Impact</a>
+                        <a class="dropdown-item" href="./blog.html">Blog</a>
+                        <a class="dropdown-item" href="https://skillsfund.herokuapp.com">SkillsFund <span class="skillsfund-new">(New)</span></a>
+                        <a class="dropdown-item disabled" href="#">Download App</a>
+                        <a class="dropdown-item" href="https://itunes.apple.com/us/app/scholarx/id1135916663?ls=1&mt=8">IOS</a>
+                        <a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.scholarx.mobile2">Android</a>
+                        <a class="dropdown-item" href="https://wa.me/2349082463268" target="_blank"> <span> Chat with us on </span> <br> 09082463268</a>
+                        </div>
+                </li>
+                <li class="nav-item">
+                    <hr class="vertical">
+                </li>
+                <!-- <span><img src="./img/Ellipse.png" alt="user img" class="img-responsive img-rounded"></span> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span><img src="./img/Ellipse.png" alt="user img" class="img-responsive img-rounded">Ronke
+                            Lancaster</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Admin</a>
+                        <a class="dropdown-item" href="#">My Campaigns</a>
+                        <a class="dropdown-item" href="#">Village</a>
+                        <a class="dropdown-item" href="https://skillsfund.herokuapp.com">SkillsFund <span class="skillsfund-new">(New)</span></a>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+    
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+
+
+    <!-- TOP HEADER START -->
+    <div class="row searchresult-header">
+        <div class="container">
+            <h2>I'm raising funds for my school project. </h2>
+        </div>
+    </div>
+    <!-- TOP HEADER ENDS -->
+
+
+    <div class="row basics-form">
+        <div class="container">
+            <div class="col-lg-6 col-md-6 col-sm-12" id="fund_request_info">
+                <h3>Fund Request Details</h3>
+                <p>This details will be shown on your campaign page, on your campaign card, and in
+                    searches.</p>
+                <form>
+                    <div class="form-group basics-address">
+                        <label for="how_much" id="how_much_label">How much do you need?</label>
+                        <input type="text" class="form-control" id="how_much_value">
+                    </div>
+
+                    <div class="form-group basics-address">
+                        <label for="why_you_need" id="why_you_need_label">Tell us why you need it?</label>
+                        <textarea class="form-control" id="why_you_need_value" rows="2"></textarea>
+                    </div>
+
+                    <div class="form-group basics-address">
+                        <label for="how_soon" id="how_soon_label">How soon do you need it?</label>
+                        <input type="text" class="form-control" id="how_soon_value">
+                    </div>
+                </form>
+
+                    <div class="back-next">
+                        <span class="back-button"><a href="#" id="back1">Back</a></span>
+                        <span class="next-button"><a href="#" id="next1">Next</a></span>
+                    </div>
+            </div>
+    
+    
+    
+            <div class="col-lg-6 col-md-6 col-sm-12" id="fund_request_bank_info">
+                <h3>Bank Details</h3>
+                <p>We will use the bank details you provide to send you your money.</p>
+    
+                <form>
+                    <div class="form-group">
+                        <label for="bank_name" id="bank_name_label">Bank Name?</label>
+                        <input type="text" class="form-control" id="bank_name_value">
+    
+                        <label for="account_name" id="account_name_label">Account Name?</label>
+                        <input type="text" class="form-control" id="account_name_value">
+    
+                        <label for="account_number" id="account_number_label">Account Number?</label>
+                        <input type="text" class="form-control" id="account_number_value">
+                    </div>
+                </form>
+    
+                <div class="back-next">
+                    <span class="back-button"><a href="#" id="back2">Back</a></span>
+                    <span class="next-button"><a href="#" id="next2">Next</a></span>
+                </div>
+            </div>
+    
+    
+            <div class="col-lg-10 col-md-10 col-sm-12" id="fund_request_review">
+                <h3>Review Application</h3>
+    
+                <table class="table table-borderless table-sm table-hover">
+                    <tbody>
+                        <tr>
+                            <td id="1"></td>
+                            <td id="1a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="2"></td>
+                            <td id="2a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="3"></td>
+                            <td id="3a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="4"></td>
+                            <td id="4a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="5"></td>
+                            <td id="5a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                        <tr>
+                            <td id="6"></td>
+                            <td id="6a"></td>
+                            <td><a href="#">Change</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <div class="back-next">
+                    <span class="back-button"><a href="#" id="back3">Edit</a></span>
+                    <button type="submit" name="button" class="btn btn-success sec-submit-button">Submit</button>
+                </div>
+            </div>
+    
+    
+    
+    
+    
+            <div class="col-lg-6 col-md-6 col-sm-12 basic-side-bar">
+                <img src="./img/secschoolimage.png" alt="laptop" class="img-responsive" style="width: 80%;">
+                <h3>Take ScholarX everywhere you go</h3>
+                <ul class="n0-list">
+                    <li class="marklist">Find tailor made scholarship just for you</li>
+                    <li class="marklist">Access to over 100,000 Scholarships</li>
+                    <li class="marklist">Get scholarship reminders and notification</li>
+                </ul>
+                <div class="container-fluid basic-get-app">
+                    <span class="basic-googleplay"><a
+                            href="https://play.google.com/store/apps/details?id=com.scholarx.mobile2"><img
+                                src="./img/Googleplay.png" alt="GooglePlay" class="playstore-logo"></a></span>
+                    <span><a href="https://itunes.apple.com/us/app/scholarx/id1135916663?ls=1&mt=8"><img
+                                src="./img/Appstore.png" alt="itunes"></a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="row join-us-footer">
+            <div class="container">
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <p> &copy; 2019 ScholarX. All rights resrved</p>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 social-black">
+                    <span class="social-start"><a href="https://www.facebook.com/scholarxpage"><img
+                                src="./img/facebook-black.png" alt="facebook"
+                                class="img-responsive facebook-black"></a></span>
+                    <span><a href="https://twitter.com/scholarxEdu"><img src="./img/twitter-black.png" alt="twitter"
+                                class="img-responsive twitter-black"></a></span>
+                    <span><a href="https://www.instagram.com/scholarx/"><img src="./img/instagram-black.png" alt="instagram"
+                                class="img-responsive instagram-black"></a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+
+<!-- SCRIPTS -->
+<script src="./js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./js/create_request_multiform.js"></script>
+</body>
+</html>
