@@ -214,72 +214,116 @@
 
 
      <!-- FOOTER STARTS  -->
-    <footer>
-        <div class="row footer-section">
-            <div class="container-fluid">
-                <div class="col-lg-5 col-md-5 col-sm-12">
-                    <h2>We're here to help</h2>
-                </div>
-                <div class="col-lg-7 col-md-7 col-sm-12">
-                    <p>Our team is eager to assist you. If you need help getting started, or have trouble using ScholarX,
-                        get in touch so we can help.</p>
-                    <p class="bold-footer">Get help</p>
-                </div>
-            </div>
-            <hr>
-            <div class="container-fluid">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a href="./index.html"><img src="./img/logo.png" alt="logo" class="img-responsive footer-logo"></a>
-                    <p>Get notified on Scholarship and funds, subscribe to our newsletter</p>
-                    <form class="form-inline">
-                        <div class="form-group mx-sm-3 mb-2">
-                            <label for="inputEmail" class="sr-only">Password</label>
-                            <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+     <footer>
+            <div class="row footer-section">
+                <div class="container-fluid">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <h2>We're here to help</h2>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+                        <p>Our team is eager to assist you. If you need help getting started, or have trouble using ScholarX,
+                            get in touch so we can help.</p>
+                        <p class="bold-footer"><a href="#" data-toggle="modal" data-target=".gethelp-Modal">Get help</a></p>
+                        <!-- Modal -->
+                        <div class="modal fade gethelp-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog  modal-lg modal-content" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">Send us a message <br> <span
+                                                class="modal-heading-sm">Our team is eager to assist you. If you need help
+                                                getting started, or have trouble using ScholarX, get in touch using ScholarX,
+                                                get in touch so we can help. </span></h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label for="get-help-firstname">First Name</label>
+                                                    <input type="text" class="form-control" id="get-help-firstname">
+                                                </div>
+                                                <div class="col">
+                                                    <label for="get-help-lastname">Last Name</label>
+                                                    <input type="text" class="form-control" id="get-help-lastname">
+                                                </div>
+                                            </div>
+                                            <label for="get-help-email">Email</label>
+                                            <input type="email" class="form-control" id="get-help-email">
+                                            <label for="get-help-phone">Phone Number</label>
+                                            <input type="phone" class="form-control" id="get-help-phone">
+                                            <label for="get-help-message" id="get-help-message_label">Message</label>
+                                            <textarea class="form-control" id="get-help-message" rows="4"></textarea>
+                                            <button type="submit" class="btn btn-primary get-help-send">Send</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
-                    </form>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-12 footer-links">
-                    <h4>Student</h4>
-                    <p> <a href="#">Create Fund Request</a> </p>
-                    <p> <a href="#">Find Scholarship</a> </p>
-                    <p> <a href="#"> Get Help</a></p>
+                <hr>
+                <div class="container-fluid">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <a href="./index.html"><img src="./img/logo.png" alt="logo" class="img-responsive footer-logo"></a>
+                        <p>Get notified on Scholarship and funds, subscribe to our newsletter</p>
+                        <form class="form-inline">
+                            <div class="form-group mx-sm-3 mb-2">
+                                <label for="inputEmail" class="sr-only">Password</label>
+                                <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 footer-links">
+                        <h4>Student</h4>
+                        <p> <a href="#">Create Fund Request</a> </p>
+                        <p> <a href="#">Find Scholarship</a> </p>
+                        <p> <a href="#" data-toggle="modal" data-target=".gethelp-Modal"> Get Help</a></p>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 footer-links">
+                        <h4>Sponsor</h4>
+                        <p> <a href="#">Fund Scholarship</a> </p>
+                        <p> <a href="#">Start Scholarship Fund</a> </p>
+                        <p> <a href="#"> Get Help</a></p>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 footer-links">
+                        <h4>About us</h4>
+                        <p> <a href="./theteam.html">Team</a> </p>
+                        <p> <a href="./inpact.html">Impact</a> </p>
+                        <p> <a href="./theteam.html#media-section"> News and Media</a></p>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-12 footer-links">
-                    <h4>Sponsor</h4>
-                    <p> <a href="#">Fund Scholarship</a> </p>
-                    <p> <a href="#">Start Scholarship Fund</a> </p>
-                    <p> <a href="#"> Get Help</a></p>
+                <div class="container-fluid get-app">
+                    <h4>Get App on Mobile</h4>
+                    <span class="googleplay"><a href="https://play.google.com/store/apps/details?id=com.scholarx.mobile2"><img
+                                src="./img/Googleplay.png" alt="GooglePlay"></a></span>
+                    <span><a href="https://itunes.apple.com/us/app/scholarx/id1135916663?ls=1&mt=8"><img
+                                src="./img/Appstore.png" alt="Itunes" class="appstore-button"></a></span>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-12 footer-links">
-                    <h4>About us</h4>
-                    <p> <a href="./theteam.html">Team</a> </p>
-                    <p> <a href="./inpact.html">Impact</a> </p>
-                    <p> <a href="./theteam.html#media-section"> News and Media</a></p>
+                <hr>
+                <div class="container-fluid">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <p>&copy; 2019 ScholarX</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+        
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 footer-socials">
+                        <span><a href="https://www.facebook.com/scholarxpage"><img src="./img/facebook-logo.png" alt="facebook"
+                                    class="img-responsive facebook"></a></span>
+                        <span><a href="https://www.instagram.com/scholarx/"><img src="./img/instagram.png" alt="instagram"
+                                    class="img-responsive instagram"></a></span>
+                        <span><a href="https://twitter.com/scholarxEdu"><img src="./img/twitter-logo-silhouette.png"
+                                    alt="twitter" class="img-responsive twitter"></a></span>
+                    </div>
                 </div>
             </div>
-            <div class="container-fluid get-app">
-                <h4>Get App on Mobile</h4>
-                <span class="googleplay"><a href="https://play.google.com/store/apps/details?id=com.scholarx.mobile2"><img src="./img/Googleplay.png" alt="GooglePlay"></a></span>
-                <span><a href="https://itunes.apple.com/us/app/scholarx/id1135916663?ls=1&mt=8"><img src="./img/Appstore.png" alt="Itunes" class="appstore-button"></a></span>
-            </div>
-            <hr>
-            <div class="container-fluid">
-                <div class="col-lg-3 col-md-3 col-sm-12">
-                    <p>&copy; 2019 ScholarX</p>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
+        </footer>
+        <!-- FOOTER ENDS -->
     
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 footer-socials">
-                    <span><a href="https://www.facebook.com/scholarxpage"><img src="./img/facebook-logo.png" alt="facebook" class="img-responsive facebook"></a></span>
-                    <span><a href="https://www.instagram.com/scholarx/"><img src="./img/instagram.png" alt="instagram" class="img-responsive instagram"></a></span>
-                    <span><a href="https://twitter.com/scholarxEdu"><img src="./img/twitter-logo-silhouette.png" alt="twitter" class="img-responsive twitter"></a></span>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- FOOTER ENDS -->
 
 <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
